@@ -5,14 +5,14 @@ int fatorialCalc(int x)
 	int f = 1;
 	int i;
 
-    for(i=x; i>0; i--) {
-        f = f*i;
+    for(i=x; i>1; i--) {
+        f *= i;
     }
     return f;
 }
 
 int main() {
-    int a, b, fatorial, soma;
+    int a, b, soma;
 
     printf("Digite o primeiro número: ");
     scanf("%d", &a);
